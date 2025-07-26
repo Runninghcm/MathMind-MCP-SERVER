@@ -71,16 +71,15 @@ Cursor
 
 --- 
 快捷入口
-- 官网入口：https://mathmind.cn/
+- [官网入口：](https://mathmind.cn/)
 - 开放平台：https://admin.mathmind.cn/#/
 - 插件市场：https://www.coze.cn/user/829510688450616
-- 智能体商店：【智能体】智能体商店
-- 免费教程：【免费】图文-扣子Coze智能体开发
-- 付费空间：【付费】1v1服务：团队空间 | 进阶课程 | 专属社群
+- 免费教程：https://mathmind.feishu.cn/wiki/OtIZwYuxbi1ErQkyovmc07HmnOh
+- 付费空间：https://mathmind.feishu.cn/wiki/GvW8wyv2VithdnkNsVmcqhVNnYb
 
 
 - B站视频讲解：https://space.bilibili.com/87911991/channel/seriesdetail?sid=4634704
 
-- 帮助中心：【麻斯智慧】Coze插件帮助文档
+- 帮助中心：https://mathmind.feishu.cn/docx/Q6eodjvPLoq7yDxZaHOcfnFrntg
 
-- Coze折扣：【折扣】扣子账户升级/资源点购买享渠道优惠
+- Coze折扣：https://mathmind.feishu.cn/wiki/D9qSwIoaEixfqmkDupuceF62nFg
