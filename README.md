@@ -1,0 +1,2 @@
+# MathMind-MCP-SERVER
+MathMind-MCP-SERVER
