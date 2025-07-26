@@ -35,6 +35,8 @@ videoTaskFetch：当图生视频工具imageGenVideo的任务是异步的时，�
 Windsurf
 前往 Windsurf > Settings > Cascade > Add Server > Add custom server 添加配置：
 
+
+`
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -42,10 +44,11 @@ Windsurf
     }
   }
 }
+`
 
 Cursor
 前往 Cursor -> Preferences -> Cursor Settings -> MCP -> Add new global MCP Server 添加配置:
-
+`
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -53,10 +56,11 @@ Cursor
     }
   }
 }
+`
 
 通义灵码
 前往 通义灵码 -> MCP工具 -> MCP服务 -> 通过配置文件添加新增MCP服务 -> lingma_mcp.json添加以下配置:
-
+`
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -64,6 +68,7 @@ Cursor
     }
   }
 }
+`
 
 
 下方添加kk企微，获得技术支持~
@@ -71,7 +76,7 @@ Cursor
 
 --- 
 快捷入口
-- [官网入口：](https://mathmind.cn/)
+- 官网入口：https://mathmind.cn/
 - 开放平台：https://admin.mathmind.cn/#/
 - 插件市场：https://www.coze.cn/user/829510688450616
 - 免费教程：https://mathmind.feishu.cn/wiki/OtIZwYuxbi1ErQkyovmc07HmnOh
