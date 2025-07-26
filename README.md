@@ -44,7 +44,7 @@ videoTaskFetch：当图生视频工具imageGenVideo的任务是异步的时，�
 
 ## SSE 调用方式
 
-Windsurf
+### Windsurf
 
 前往 Windsurf > Settings > Cascade > Add Server > Add custom server 添加配置：
 
@@ -60,7 +60,7 @@ Windsurf
 `
 
 
-Cursor
+### Cursor
 
 前往 Cursor -> Preferences -> Cursor Settings -> MCP -> Add new global MCP Server 添加配置:
 
@@ -74,9 +74,10 @@ Cursor
 }
 `
 
-通义灵码
+### 通义灵码
 
 前往 通义灵码 -> MCP工具 -> MCP服务 -> 通过配置文件添加新增MCP服务 -> lingma_mcp.json添加以下配置:
+
 `
 {
   "mcpServers": {
@@ -87,6 +88,8 @@ Cursor
 }
 `
 
+
+# 技术支持
 
 下方添加kk企微，获得技术支持~
 
