@@ -71,6 +71,7 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
 # 技术支持
 
 邮件联系：ai@mathmind.cn
+
 技术支持：
 
 <img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f53ed106-d378-4347-aa48-91c6968b0bfe" />
