@@ -19,7 +19,7 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
 
 # 三、快速开始
 ## 获取apikey
-在MathMind开放平台注册并获取apikey，[立即前往](https://admin.mathmind.cn)
+在MathMind开放平台注册并获取apikey，[立即前往](https://admin.mathmind.cn/login?referralCode=REF22431068)
 
 ## SSE 调用方式
 
