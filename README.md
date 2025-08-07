@@ -28,7 +28,7 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
 前往 Windsurf > Settings > Cascade > Add Server > Add custom server 添加配置：
 
 
-`
+```
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -36,14 +36,14 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
     }
   }
 }
-`
+```
 
 
 ### Cursor
 
 前往 Cursor -> Preferences -> Cursor Settings -> MCP -> Add new global MCP Server 添加配置:
 
-`
+```
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -51,13 +51,13 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
     }
   }
 }
-`
+```
 
 ### 通义灵码
 
 前往 通义灵码 -> MCP工具 -> MCP服务 -> 通过配置文件添加新增MCP服务 -> lingma_mcp.json添加以下配置:
 
-`
+```
 {
   "mcpServers": {
     "mcp-server-mathmind": {
@@ -65,7 +65,7 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
     }
   }
 }
-`
+```
 
 
 # 其他
@@ -76,7 +76,7 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
 
 技术支持：
 
-<img width="200" height="200" alt="image" src="https://github.com/user-attachments/assets/f53ed106-d378-4347-aa48-91c6968b0bfe" />
+<img width="150" height="150" alt="image" src="https://github.com/user-attachments/assets/f53ed106-d378-4347-aa48-91c6968b0bfe" />
 
 
 --- 
