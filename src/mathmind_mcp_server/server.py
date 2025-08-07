@@ -348,8 +348,8 @@ def imgPipTaskFetch(req_id: Annotated[str, Field(description="imgPip 视频画�
 
 def main():
     print("start mcp server !")
-    mcp.run(transport="sse", host="0.0.0.0", port=8000)
-    # mcp.run(transport="stdio")
+    # mcp.run(transport="sse", host="0.0.0.0", port=8000)
+    mcp.run(transport="stdio")
 
 if __name__ == '__main__':
     main()
