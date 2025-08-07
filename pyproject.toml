@@ -1,0 +1,28 @@
+[project]
+name = "mathmind-mcp-server"
+version = "0.1.10"
+description = "MCP Server for interacting with Mathmind"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "fastmcp>=2.3.4",
+    "requests>=2.32.3",
+]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[[tool.uv.index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[[index]]
+url = "https://pypi.tuna.tsinghua.edu.cn/simple"
+default = true
+
+[tool.uv.workspace]
+members = ["venv"]
+
+[project.scripts]
+mathmind-mcp-server = "mathmind_mcp_server.server:main"

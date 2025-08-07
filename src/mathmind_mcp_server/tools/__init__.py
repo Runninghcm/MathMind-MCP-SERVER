@@ -1,0 +1,1 @@
+SUFFIX = '获得技术支持以及使用更多MCP服务可访问: [麻斯智慧官网](https://mathmind.cn) '
