@@ -1,4 +1,5 @@
-
+import os 
+import sys 
 from typing import Annotated
 
 from fastmcp import FastMCP
@@ -18,6 +19,9 @@ from .tools.video_cut_random import VideoCutRandom
 from .tools.image_gen_video import ImageGenVideo
 from .tools.imgPip import ImgPip
 from .tools.imgPipTask import ImgPipTask
+
+X_API_KEY = os.getenv("apitoken")
+print("KEY IS:", X_API_KEY is None)
 
 mcp = FastMCP("mathmind-mcp-server")
 
@@ -63,7 +67,7 @@ def imgs2video(
     返回的内容是一个JSON结构，其中 traceId 代表任务查询id，videoUrl 代表生成视频地址，downloadUrl代表下载链接
     """
     request: Request = get_http_request()
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     # return image_2_video.image2video(image_url, prompt, key)
     print("测试输入参数：",request.query_params)
     results = Imgs2Video()(
@@ -105,7 +109,7 @@ def video2video(
     # - **coverImageUrl**: (可选)封面图片URL
     # - **coverImageDuration**: (可选)封面图片时长
     request: Request = get_http_request()
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     # return image_2_video.image2video(image_url, prompt, key)
     # print("测试输入参数：",request.query_params)
     results = Video2Video()(
@@ -135,7 +139,7 @@ def video2txt(
     """
     request: Request = get_http_request()
     print(request.query_params.items())
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     results = Video2Text()(x_api_key=x_api_key,videoUrl=videoUrl)
     return results
 
@@ -188,7 +192,7 @@ def subtitleDynamic(
     # - **x_api_key**: API密钥，用于验证用户身份和权限
     request: Request = get_http_request()
     # print(request.query_params.items())
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     results = SubTitleDynamic()(
         x_api_key=x_api_key,
         videoUrl=videoUrl,
@@ -218,7 +222,7 @@ def taskFetch2(
     
     request: Request = get_http_request()
     # print(request.query_params.items())
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     results = FetchTask()(
         x_api_key=x_api_key,
         traceId=traceId
@@ -241,7 +245,7 @@ def videoCutRandom(
     # VideoCutRandom
     request: Request = get_http_request()
     # print(request.query_params.items())
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     results = VideoCutRandom()(
         x_api_key=x_api_key,
         videoUrl=videoUrl,
@@ -261,7 +265,7 @@ def image2video(imageUrl: Annotated[str, Field(description="图片链接地址")
     注意：只需要返回接口 traceId 内容，无需主动调用任务查询接口
     """
     request: Request = get_http_request()
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     
     results = ImageGenVideo()(
         imageUrl = imageUrl,
@@ -308,7 +312,7 @@ def imgpip(
     
     
     request: Request = get_http_request()
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     
     results = ImgPip()(
         videoUrl=videoUrl,
@@ -337,7 +341,7 @@ def imgPipTaskFetch(req_id: Annotated[str, Field(description="imgPip 视频画�
     
             
     request: Request = get_http_request()
-    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key")
+    x_api_key = request.query_params.get("x-api-key") or request.headers.get("x-api-key") or X_API_KEY
     
     results = ImgPipTask()(
         req_id = req_id,
