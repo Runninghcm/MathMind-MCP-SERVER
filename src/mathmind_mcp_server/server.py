@@ -352,9 +352,9 @@ def imgPipTaskFetch(req_id: Annotated[str, Field(description="imgPip 视频画�
 
 def main():
     print("start mcp server !")
-    # mcp.run(transport="sse", host="0.0.0.0", port=8000)
+    mcp.run(transport="sse", host="0.0.0.0", port=8000)
     # mcp.run(transport="stdio")
-    mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
+    # mcp.run(transport="streamable-http", host="0.0.0.0", port=8000)
 
 if __name__ == '__main__':
     main()
