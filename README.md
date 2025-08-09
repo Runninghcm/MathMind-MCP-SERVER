@@ -12,9 +12,8 @@ MathMind MCP Server提供了一个基于MCP协议的一系列音视频创作与�
 | 5  | 视频字幕识别任务查询 | taskFetch2 | 输入工具subtitleDynamic输出的traceId即可获得添加了字幕以后的视频地址 |
 | 6  | 视频片段获取 | videoCutRandom | 输入视频链接，输入截取的起始和结束位置，即可截取视频片段 |
 | 7  | 图生视频 | imageGenVideo | 上传图片，输入提示词，即可生成视频，模型为VIDU。<br>支持实时生成和异步生成。当异步生成，则需要调用查询工具：videoTaskFetch<br>实时直接生成URL；<br>异步先只给traceId，用户需要调用videoTaskFetch |
-| 8  | 图生视频异步任务结果查询 | videoTaskFetch | 当图生视频工具imageGenVideo的任务是异步时，就需要调用该工具查询生成的视频结果。 |
-| 9  | 图片画中画 | imgPip | 输入视频，为视频添加图片，如logo、视频提及内容等图片素材。<br>支持自定义素材的宽高、入场和出场的时间、动画以及显示的位置，非必填，取默认值。 |
-| 10 | 画中画任务查询 | cutTaskFetch | 上述imgPip只会返回ReqId，此时需要使用任务查询工具主动查询结果 |
+| 8  | 图片画中画 | imgPip | 输入视频，为视频添加图片，如logo、视频提及内容等图片素材。<br>支持自定义素材的宽高、入场和出场的时间、动画以及显示的位置，非必填，取默认值。 |
+| 9 | 画中画任务查询 | cutTaskFetch | 上述imgPip只会返回ReqId，此时需要使用任务查询工具主动查询结果 |
 
 
 # 三、快速开始
